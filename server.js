@@ -15,7 +15,11 @@ const server = http.createServer(app);
 const io = socketIo(server);
 
 // Middleware
-app.use(cors());
+app.use(cors({
+  origin: ['http://localhost:5173'], // Update with your client URL
+  methods: ['GET', 'POST'],
+  credentials: true
+}));
 app.use(express.json());
 
 // Routes
