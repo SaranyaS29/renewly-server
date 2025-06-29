@@ -16,7 +16,7 @@ const io = socketIo(server);
 
 // Middleware
 app.use(cors({
-  origin: ['https://renewly-cj7g.vercel.app'], 
+  origin: ['https://renewly-eight.vercel.app'], 
   methods: ['GET', 'POST'],
   credentials: true
 }));
